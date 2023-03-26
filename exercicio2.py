@@ -6,7 +6,6 @@ from functools import lru_cache
 
 @lru_cache
 def fibonacci_sequence(n: int) -> int:
-    """Sequência Fibonacci with memoization"""
     if n < 1:
         return 0
     if n <= 2:
