@@ -15,5 +15,6 @@ while True:
     else:
         print("Número inválido, tente novamente.")
 
+print(f"Numeros pares de 0 a {numero}:")
 for x in range(0, numero + 1, 2):
     print(pares_crescentes(x))

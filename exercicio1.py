@@ -8,6 +8,4 @@ def fatorial(n: int) -> int:
 
 if __name__ == "__main__":
     numero = int(input("Insira um numero inteiro: "))
-    fat5 = fatorial(5)
-    print(f"Fatorial de {numero}:")
-    print(fat5)
+    print(f"{numero}! = {fatorial(numero)}")
