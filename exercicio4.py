@@ -3,11 +3,11 @@
 def somar_lista(tamanho: int) -> int:
     if tamanho <= 1:
         return lis[0]
-    return lis[n - 1] + somar_lista(n - 1)
+    return lis[tamanho - 1] + somar_lista(tamanho - 1)
 
 
 if __name__ == '__main__':
-    lis = []
+    lis = [0]
     while True:
         novo_numero = int(input("Insira um inteiro para adicionar à lista. (0 ou negativo termina): "))
         if novo_numero <= 0:
