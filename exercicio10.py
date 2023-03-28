@@ -11,6 +11,7 @@ def contar_caracteres(n, k):
     else:
         return contar_caracteres(n // 10, k)
 
+
 num = int(input("Insira o numero: "))
 char = int(input("Insira qual numero quer contar a ocorrencia: "))
 
