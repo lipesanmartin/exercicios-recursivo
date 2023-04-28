@@ -5,7 +5,12 @@ def fatorial(n: int) -> int:
         return 1
     return n * fatorial(n - 1)
 
+if __name__ == '__main__':
+    for x in range(1, 6):
+        fatorial = x * (x + 1)
+    print(fatorial)
 
-if __name__ == "__main__":
-    numero = int(input("Insira um numero inteiro: "))
-    print(f"{numero}! = {fatorial(numero)}")
+    x = [1, 2, 3]
+    y = x
+    x.append(4)
+    print(y)
