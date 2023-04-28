@@ -13,8 +13,8 @@ def contar_caracteres(n, k):
     else:
         return contar_caracteres(n // 10, k)
 
+if __name__ == '__main__':
+    num = int(input("Insira o numero: "))
+    char = int(input("Insira qual numero quer contar a ocorrencia: "))
 
-num = int(input("Insira o numero: "))
-char = int(input("Insira qual numero quer contar a ocorrencia: "))
-
-print(contar_caracteres(num, char))
+    print(contar_caracteres(num, char))

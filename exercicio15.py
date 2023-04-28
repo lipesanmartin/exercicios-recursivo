@@ -7,13 +7,13 @@ def pares_decrescentes(n: int) -> int:
     return 1 + pares_decrescentes(n - 1)
 
 # print(pares_crescentes(10))
+if __name__ == '__main__':
+    while True:
+        numero = int(input("Insira um numero par: "))
+        if numero % 2 == 0:
+            break
+        else:
+            print("Número inválido, tente novamente.")
 
-while True:
-    numero = int(input("Insira um numero par: "))
-    if numero % 2 == 0:
-        break
-    else:
-        print("Número inválido, tente novamente.")
-
-for x in range(numero, -1, -2):
-    print(pares_decrescentes(x))
+    for x in range(numero, -1, -2):
+        print(pares_decrescentes(x))

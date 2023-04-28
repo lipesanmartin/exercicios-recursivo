@@ -8,7 +8,8 @@ def mdc(x, y):
         return x
     return mdc(y, x % y)
 
-numero1 = int(input("Insira o primeiro numero: "))
-numero2 = int(input("Insira o segundo numero: "))
+if __name__ == '__main__':
+    numero1 = int(input("Insira o primeiro numero: "))
+    numero2 = int(input("Insira o segundo numero: "))
 
-print(mdc(numero1, numero2))
+    print(mdc(numero1, numero2))

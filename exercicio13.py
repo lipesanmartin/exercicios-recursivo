@@ -6,7 +6,8 @@ def ordem_decrescente(n: int) -> int:
         return n
     return ordem_decrescente(n - 1) + 1
 
-lim = int(input("Escolha o limitador: "))
-print(f"Numeros de 0 até {lim}:")
-for x in range(lim, -1, -1):
-    print(ordem_decrescente(x))
+if __name__ == '__main__':
+    lim = int(input("Escolha o limitador: "))
+    print(f"Numeros de 0 até {lim}:")
+    for x in range(lim, -1, -1):
+        print(ordem_decrescente(x))

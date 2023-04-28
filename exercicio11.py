@@ -9,7 +9,8 @@ def multip_recursiva(n1: int, n2: int) -> int:
     return n1 + multip_recursiva(n1, n2 - 1)
 
 
-numero1 = int(input("Insira o primeiro fator: "))
-numero2 = int(input("Insira o segundo fator: "))
+if __name__ == '__main__':
+    numero1 = int(input("Insira o primeiro fator: "))
+    numero2 = int(input("Insira o segundo fator: "))
 
-print(f"{numero1} x {numero2} = {multip_recursiva(numero1, numero2)}")
+    print(f"{numero1} x {numero2} = {multip_recursiva(numero1, numero2)}")

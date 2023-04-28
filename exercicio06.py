@@ -9,8 +9,8 @@ def potenciacao(k: int, n: int) -> int:
         return k
     return k * potenciacao(k, n - 1)
 
+if __name__ == '__main__':
+    numero = int(input("Insira um numero inteiro: "))
+    potencia = int(input(f"Insira a potencia que gostaria de elevar {numero}: "))
 
-numero = int(input("Insira um numero inteiro: "))
-potencia = int(input(f"Insira a potencia que gostaria de elevar {numero}: "))
-
-print(f"{numero} elevado a {potencia} é {potenciacao(numero, potencia)}.")
+    print(f"{numero} elevado a {potencia} é {potenciacao(numero, potencia)}.")

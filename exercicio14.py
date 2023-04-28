@@ -8,13 +8,14 @@ def pares_crescentes(n: int) -> int:
     return 1 + pares_crescentes(n - 1)
 
 
-while True:
-    numero = int(input("Insira um numero par: "))
-    if numero % 2 == 0:
-        break
-    else:
-        print("Número inválido, tente novamente.")
+if __name__ == '__main__':
+    while True:
+        numero = int(input("Insira um numero par: "))
+        if numero % 2 == 0:
+            break
+        else:
+            print("Número inválido, tente novamente.")
 
-print(f"Numeros pares de 0 a {numero}:")
-for x in range(0, numero + 1, 2):
-    print(pares_crescentes(x))
+    print(f"Numeros pares de 0 a {numero}:")
+    for x in range(0, numero + 1, 2):
+        print(pares_crescentes(x))

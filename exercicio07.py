@@ -7,7 +7,8 @@ def inverter_vetor(vetor, inicio, fim):
         inverter_vetor(vetor, inicio + 1, fim - 1)
 
 
-numeros = [i for i in range(1, 101)]
-print("Vetor original:", numeros)
-inverter_vetor(numeros, 0, 99)
-print("Vetor invertido:", numeros)
+if __name__ == '__main__':
+    numeros = [i for i in range(1, 101)]
+    print("Vetor original:", numeros)
+    inverter_vetor(numeros, 0, 99)
+    print("Vetor invertido:", numeros)

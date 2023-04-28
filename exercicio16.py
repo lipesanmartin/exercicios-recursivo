@@ -9,11 +9,12 @@ def fatorial_duplo(n: int) -> int:
     return n * fatorial_duplo(n - 2)
 
 
-while True:
-    num = int(input("Insira um número impar positivo: "))
-    if num % 2 == 0 or num < 1:
-        print("Número inválido:")
-    else:
-        print(fatorial_duplo(num))
-        break
+if __name__ == '__main__':
+    while True:
+        num = int(input("Insira um número impar positivo: "))
+        if num % 2 == 0 or num < 1:
+            print("Número inválido:")
+        else:
+            print(fatorial_duplo(num))
+            break
 

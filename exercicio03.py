@@ -8,4 +8,5 @@ def inverter_inteiro(numero):
     numero_invertido = inverter_inteiro(resto_do_numero)
     return int(str(ultimo_digito) + str(numero_invertido))
 
-print(inverter_inteiro(123456789))
+if __name__ == '__main__':
+    print(inverter_inteiro(123456789))
