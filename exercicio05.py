@@ -7,9 +7,12 @@ def somatorio(n: int) -> int:
 
 if __name__ == '__main__':
     while True:
-        numero = int(input("Insira um numero inteiro positivo: "))
-        if numero > 0:
-            print(f"Soma dos números de 1 até {numero}: {somatorio(numero)}")
-            break
-        else:
-            print("Número precisa ser positivo")
+        try:
+            numero = int(input("Insira um numero inteiro positivo: "))
+            if numero > 0:
+                print(f"Soma dos números de 1 até {numero}: {somatorio(numero)}")
+                break
+            else:
+                print("Número precisa ser positivo")
+        except ValueError:
+            print("Caracter informado não é um número inteiro.")
